@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 177, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 20px; 
+}
+.main-container{
+    height:max-content ;
+   min-width: max-content;
+   width: 190px;
+   max-width: 200px;
+    background-color: rgb(161, 160, 160);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 4px;
+}
+.main-container h3{
+    color: white;
+}
+.main-display{
+    height: 2rem;
+    background-color: aliceblue;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: larger;
+    text-align: end;
+   box-shadow: inset 0px -2px  5px rgb(96, 95, 95);
+   overflow: scroll;
+}
+.main-display::-webkit-scrollbar{
+    display: none;
+}
+.key-container{
+height: auto;
+width: 100%;
+display: grid;
+grid-template-columns: 25% 25% 25% 25%;
+gap: 2px;
+}
+.function-operator{
+    border: none;
+    border-radius: 4px;
+    height: 1.5rem;
+    background-color: rgb(80, 78, 78);
+    color: white;
+    grid-column: span 2;
+}
+.function-operator:active{
+    filter: brightness(1.2);
+    transform: translateY(-1px);
+}
+.key-container .numb-key{
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+   background-color: white;
+   box-shadow: inset 1px -2px 2px rgb(158, 157, 157);
+}
+.key-container .operator, .equal{
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    color : white;
+   background-color: rgb(240, 164, 10);
+   box-shadow: inset 1px -2px 2px rgb(158, 157, 157);
+}
+.key-container .numb-key:active, .key-container .operator:active{
+    filter: brightness(1.2);
+    transform: translateY(-1px);
+}
